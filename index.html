@@ -33,13 +33,10 @@
 	    
       // retorna un color con base en la cantidad de especies
       function color(d) {
-	return d > 25 ? '#005824' :
-	       d > 20 ? '#238b45' :
-	       d > 15 ? '#41ae76' :
-	       d > 10 ? '#66c2a4' :
-	       d >  5 ? '#41ae76' :
-	       d >  3 ? '#238b45' :
-		        '#005824';
+	return d > 60 ? '#d7191c' :
+	       d > 40 ? '#fec980' :
+	       d > 20 ? '#c7e6db' :
+		        '#2c7bb6';
       }	    
       function infoRiqueza(feature, layer) {
 	var popupContent = "Riqueza de especies: ";
