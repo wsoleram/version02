@@ -23,6 +23,7 @@
 
     <script src="js/riqespecies_avesacures-cr_ramsar-2017-wgs84.js" type="text/javascript"></script>
     <script src="js/regPresGBIFAvesAcuRes-cr_ramsar-2017-wgs84.js"  type="text/javascript"></script>
+    <script src="js/Cantones2014wgs84.js" type="text/javascript"></script>
 
     <script>
       var mapa = L.map('map').setView([9.7, -84], 8);
@@ -42,7 +43,7 @@
 	return d > 50000  ? '#d7191c' :
 	       d > 150000 ? '#fec980' :
 	       d > 200000 ? '#c7e6db' :
-		            '#2c7bb6';
+		            '#2c7bb6' ;
       }	    
       function poblacion(feature, layer) {
 	var popupContent = "Pobacion del canton: ";
@@ -72,11 +73,10 @@
 
      var baseLayers = {
 	"OpenStreetMap": osm,
-	"MapBox" : mbox
+	 "MapBox" : mbox
       };
       var overlays = {
       "Cantones de Costa Rica":cantonescr
-	
       };
       L.control.layers(baseLayers, overlays).addTo(mapa);
 	    
